@@ -11,6 +11,6 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 });
 
-app.listen(app.get('PORT'), function () {
-  console.log('Example app listening on port '+ app.get('PORT') +'!');
-});
+app.listen(PORT, function () {
+  console.log('Example app listening on port '+ PORT +'!');
+})
