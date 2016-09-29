@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', function (req, res) {
-  res.sendFile(express.static(__dirname +'/views/index.html'));
+  res.sendFile(views/index');
 });
 
 app.listen(PORT, function () {
