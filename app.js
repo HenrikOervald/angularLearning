@@ -4,10 +4,10 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 app.use(express.static(__dirname + '/public'));
 
-var index = require('views/index.html');
+
 
 app.get('/', function (req, res) {
-  res.send(index);
+  res.sendFile('views/index.html');
 });
 
 app.listen(PORT, function () {
